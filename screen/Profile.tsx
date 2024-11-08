@@ -13,12 +13,12 @@ const recentActivity = [
 const Profile = () => {
   return (
     <View style={styles.container}>
-      {/* Información del usuario */}
+
       <View style={styles.header}>
         <Image source={require('../assets/pfp.jpg')} style={styles.profilePic} />
         <Text style={styles.userName}>Daniel Mediavilla</Text>
         <TouchableOpacity style={styles.editProfileButton}>
-          <Text style={styles.editProfileText}>Editar perfil</Text>
+          <Text style={styles.editProfileText}>Ajustes</Text>
         </TouchableOpacity>
 
         <View style={styles.statsContainer}>
@@ -37,7 +37,6 @@ const Profile = () => {
         </View>
       </View>
 
-      {/* Actividad reciente */}
       <Text style={styles.sectionTitle}>Actividad reciente</Text>
       <FlatList
         horizontal
